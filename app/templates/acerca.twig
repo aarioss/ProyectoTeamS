@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>SAGE Network con Responsive Web Design. Secci&oacute;n Acerca </title>   
+    <meta name="description" content="En esta secci&oacute;n podr&aacute;n conocer un poco m&aacute;s sobre SAGENetwork" />
+    <meta name="viewport" content="width=device-width,initial-scalet=1" />
+    <!-- viweport significa que el ancho de nuestra pagina se va ver conf orme sea el ancho del dispositivo en el que se esta biendo, y la escala inicial sera =1 o 100%-->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ base_url() }}/assets/img/favicon2.ico" /><!--Esta linea de codigo es para poner una icon nuestra pagina que va alado del titulo de la WEB-->
+    <link rel="author" type="text/plain" href="humans.txt" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+     <link href='{{ base_url() }}/css/style.css' rel='stylesheet' type='text/css' />
+    <!--[if lt IE 9]>
+        <scrip src="//html5shiv.googlecode.com/svn/trunk/html5.js"></scrip>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            <img class="fade" alt="SAGENetwork.com | sitio para gamer's" src="{{ base_url() }}/assets/img/Sage-logo.png" />
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/ace   rca">Acerca</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/productos">Productos</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contenido">
+        <article id="descripcion-acerca">
+            <h2>Misi&oacute;n</h2>
+            <p>
+                <!-- start slipsum code -->
+                Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shtmlhirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+                <br /><br /><br/>
+                Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+                <br /><br/>
+                Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're.
+
+                <!-- please do not remove this line -->
+                <div style="display:none;">
+                <a href="http://slipsum.com">lorem ipsum</a></div>
+            </p>
+            <hr />
+            <h2>Visi&oacute;n</h2>
+            <p>
+                <!-- start slipsum code -->
+                Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+                <br /><br/>
+                Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+                <br /><br/>
+                Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+                <!-- please do not remove this line -->
+                <div style="display:none;">
+                <a href="http://slipsum.com">lorem ipsum</a></div>
+            </p>
+        </article>
+        <article id="multimedia-acerca">
+            <figure id="img-acerca">            
+            <a class="fade" href="http://lan.leagueoflegends.com/" target="_blank">
+                <img src="{{ base_url() }}/assets/img/lol.png" alt="League of Legends" />
+                <figcaption>League of Legends</figcaption>
+            </a>                        
+            </figure>
+            <video id="video-acerca" controls preload> <!--Con controls decimos que nuestro video tendras controles de reproduccion dentro de la web y co preload para poder vor a reproducir lo que ya se a cargado-->
+                <source src="{{ base_url() }}/assets/vdo/kuroky.mp4" type="video/mp4" />
+                <source src="{{ base_url() }}/assets/vdo/kuroky.webm" type="video/webm" />
+                <source src="{{ base_url() }}/assets/vdo/kuroky.ogv" type="video/ogg" />
+                <!--Estos son los 3 formatos de video que ayudaran a q tu video se reproduca en los 5 navegadores mas usados-->
+            </video>
+        </article>
+        <article id"video-separado">
+            
+        </article>
+    </section>
+    <footer>
+        Aprendiendo HTML5,CSS3, jQuery y Responsive Web Desing con <a rel="author" href="http://twitter.com/767Ron" target="_blank">@767Ron</a><!--Enlasa el @767Ron con nuestra cuenta de twitter pero al momento de hacer click en el link nos habrira una nueva pestana en el navegador-->
+    </footer>
+</body>
+</html>

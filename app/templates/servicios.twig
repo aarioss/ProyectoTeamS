@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>SAGE Network con Responsive Web Design. Secci&oacute;n Acerca </title>   
+    <meta name="description" content="En esta secci&oacute;n podr&aacute;n conocer un poco m&aacute;s sobre SAGENetwork" />
+    <meta name="viewport" content="width=device-width,initial-scalet=1" />
+    <!-- viweport significa que el ancho de nuestra pagina se va ver conf orme sea el ancho del dispositivo en el que se esta biendo, y la escala inicial sera =1 o 100%-->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ base_url() }}/assets/img/favicon2.ico" /><!--Esta linea de codigo es para poner una icon nuestra pagina que va alado del titulo de la WEB-->
+    <link rel="author" type="text/plain" href="humans.txt" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+     <link href='{{ base_url() }}/css/style.css' rel='stylesheet' type='text/css' />
+    <!--[if lt IE 9]>
+        <scrip src="//html5shiv.googlecode.com/svn/trunk/html5.js"></scrip>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            <img class="fade" alt="SAGENetwork.com | sitio para gamer's" src="{{ base_url() }}/assets/img/Sage-logo.png" />
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/acerca">Acerca</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/productos">Productos</a></li>
+                <li><a href="/contacto">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contenido">
+       <section id="servicios-principal">
+            <img id="img-servicios" src="{{ base_url() }}/assets/img/servicios.png" alt="Servicios">        
+            <article id="nuestros-servicios">
+                <h2>Nuestros Serviios</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br /> <br />
+                dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br /> <br />
+                dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+
+        </section>
+        <section id="servicios-tipos">
+            <article id="servicios-1">
+                <h3>Servicios 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                </p>
+                <hr />
+                <div>
+                    <audio id="audio-servicios" controls>
+                        <source src="{{ base_url() }}/assets/audio/terminator.mp3" type="audio/mpeg" />
+                        <source src="{{ base_url() }}/assets/audio/terminator.ogg" type="audio/ogg" />
+                    </audio>
+                    <br />
+                    Tema para festejar un rampage.
+                </div>
+            </article>
+            <article id="servicios-2">
+                <h3>Servicio 2</h3>
+                <iframe width="500" height="250" src="https://www.youtube.com/embed/S2pWxbSqQfo" frameborder="0" allowfullscreen></iframe>
+            </article>
+            <article id="servicios-3">
+                <h3>Servicios 3</h3>
+                <ol>
+                    <li>Elemento de lista 1</li>
+                    <li>Elemento de lista 2</li>
+                    <li>Elemento de lista 3</li>
+                    <li>Elemento de lista 4</li>
+                    <li>Elemento de lista 5</li>
+                </ol>
+            </article>
+        </section>
+    </section>
+    <footer>
+        Aprendiendo HTML5,CSS3, jQuery y Responsive Web Desing con <a rel="author" href="http://twitter.com/767Ron" target="_blank">@767Ron</a><!--Enlasa el @767Ron con nuestra cuenta de twitter pero al momento de hacer click en el link nos habrira una nueva pestana en el navegador-->
+    </footer>
+</body>
+</html>

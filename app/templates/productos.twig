@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>SAGE Network con Responsive Web Design </title>  
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />        
+        <!-- Bootstrap css-->
+        <!-- <link href='{{ base_url() }}/assets/js/bootstrap/bootstrap.css' rel='stylesheet'  /> -->
+        <!-- Bootstrap js -->
+       <!--  <script src="{{ base_url() }}/assets/js/bootstrap/bootstrap.min.js"></script>  -->
+        
+
+        <!-- codigo copiado -->
+        <meta name="description" content="Bienvenido a mi portafoleo Web hecho en HTML5, CSS3 y jQuery Responsive Web Design" />
+        <meta name="viewport" content="width=device-width,initial-scalet=1" />
+        <!-- viweport significa que el ancho de nuestra pagina se va ver conf orme sea el ancho del dispositivo en el que se esta biendo, y la escala inicial sera =1 o 100%-->
+        <link rel="shortcut icon" type="image/x-icon" href="{{ base_url() }}/assets/img/favicon2.ico" /><!--Esta linea de codigo es para poner una icon nuestra pagina que va alado del titulo de la WEB-->
+        
+        <link rel='stylesheet' type='text/css' href='{{ base_url() }}/css/fancybox.css'  />
+        <link rel='stylesheet' type='text/css' href='{{ base_url() }}/css/style.css'  />
+        <!-- Jquery js -->
+        <script src="{{ base_url() }}/assets/js/jquery/jquery-1.4.3.min.js"></script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script><!--Con este Scrip llamamos a la libreria de jquery en su ultima version desde google es decir en linea.-->
+
+        <!--[if lt IE 9]>
+         <scrip src="//http://html5shiv.googlecode.com/svn/trunk/html5.js"></scrip>
+        <![endif]-->
+
+        <script>
+        !window.jquery && document.write("<script src='{{ base_url() }}/assets/js/jquery/jquery-1.4.3.min.js'><\/script>"); 
+        </script><!--Si estamos sin internet y no encuentra el jquery on-line lo buscara en nuestra carpeta js local -->
+        <script src="{{ base_url() }}/assets/js/jquery/jquery.flexslider.js"></script><!--En esta parte hacemos referencia a flexslider
+        que esta dentro de nuestro proyecto en la carpeta js-->
+       
+        <script src="{{ base_url() }}/assets/js/jquery/jquery.mousewheel-3.0.4.pack.js"></script><!-- LLama al jquery para que la rueda del mouse funcione dentro de la pagina web -->
+        <script src="{{ base_url() }}/assets/js/jquery/jquery.fancybox-1.3.4.js"></script><!--En esta parte hacemos referencia a flexslider
+        que esta dentro de nuestro proyecto en la carpeta js-->
+        
+        <script src="{{ base_url() }}/assets/js/jquery/main.js"></script> <!-- Efecuta la fuincion que inicia el flexsiler --> 
+
+    </head>
+    <body>
+       <header>
+        <h1>
+            <a href="/">
+            <img class="fade" alt="SAGENetwork.com | sitio para gamer's" src="{{ base_url() }}/assets/img/Sage-logo.png" />
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/acerca">Acerca</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/productos">Productos</a></li>
+                <li><a href="/contacto">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contenido">
+       <section id="trabajos">
+            <h2>Algunos de nestros Trabajos</h2>
+            <div class="portafolio">
+                <article><!-- cada aricle scontenera a cada imagen -->
+                    <a rel="trabajos" class="fade" href="{{ base_url() }}/assets/img/trabajo1.png" title="Este es el trabajo 1">
+                        <img class="redonda" src="{{ base_url() }}/assets/img/trabajo1-mini.png">
+                    </a>
+                </article>
+                <article><!-- cada aricle scontenera a cada imagen -->
+                    <a rel="trabajos" class="fade" href="{{ base_url() }}/assets/img/trabajo2.png" title="Este es el trabajo 2">
+                        <img class="redonda" src="{{ base_url() }}/assets/img/trabajo2-mini.png">
+                    </a>
+                </article>
+                <article><!-- cada aricle scontenera a cada imagen -->
+                    <a rel="trabajos" class="fade" href="{{ base_url() }}/assets/img/trabajo3.png" title="Este es el trabajo 3">
+                        <img class="redonda" src="{{ base_url() }}/assets/img/trabajo3-mini.png">
+                    </a>
+                </article>
+                <article><!-- cada aricle scontenera a cada imagen -->
+                    <a rel="trabajos" class="fade" href="{{ base_url() }}/assets/img/trabajo5.png" title="Este es el trabajo 4">
+                        <img class="redonda" src="{{ base_url() }}/assets/img/trabajo5-mini.png">
+                    </a>
+                </article>
+                <article><!-- cada aricle scontenera a cada imagen -->
+                    <a rel="trabajos" class="fade" href="{{ base_url() }}/assets/img/trabajo4.png" title="Este es el trabajo 5">
+                        <img class="redonda" src="{{ base_url() }}/assets/img/trabajo4-mini.png">
+                    </a>
+                </article>
+                <article><!-- cada aricle scontenera a cada imagen -->
+                    <a rel="trabajos" class="fade" href="{{ base_url() }}/assets/img/trabajo12.png" title="Este es el trabajo 6">
+                        <img class="redonda" src="{{ base_url() }}/assets/img/trabajo12-mini.png">
+                    </a>
+                </article>
+            </div>
+            <div class="portafolio">
+                <article><!-- cada aricle scontenera a cada imagen -->
+                    <a rel="trabajos" class="fade" href="{{ base_url() }}/assets/img/trabajo6.png" title="Este es el trabajo 7">
+                        <img class="redonda" src="{{ base_url() }}/assets/img/trabajo6-mini.png">
+                    </a>
+                </article>
+                <article><!-- cada aricle scontenera a cada imagen -->
+                    <a rel="trabajos" class="fade" href="{{ base_url() }}/assets/img/trabajo7.png" title="Este es el trabajo 8">
+                        <img class="redonda" src="{{ base_url() }}/assets/img/trabajo7-mini.png">
+                    </a>
+                </article>
+                <article><!-- cada aricle scontenera a cada imagen -->
+                    <a rel="trabajos" class="fade" href="{{ base_url() }}/assets/img/trabajo8.png" title="Este es el trabajo 9">
+                        <img class="redonda" src="{{ base_url() }}/assets/img/trabajo8-mini.png">
+                    </a>
+                </article>
+                <article><!-- cada aricle scontenera a cada imagen -->
+                    <a rel="trabajos" class="fade" href="{{ base_url() }}/assets/img/trabajo9.png" title="Este es el trabajo 10">
+                        <img class="redonda" src="{{ base_url() }}/assets/img/trabajo9-mini.png">
+                    </a>
+                </article>
+                <article><!-- cada aricle scontenera a cada imagen -->
+                    <a rel="trabajos" class="fade" href="{{ base_url() }}/assets/img/trabajo10.png" title="Este es el trabajo 11">
+                        <img class="redonda" src="{{ base_url() }}/assets/img/trabajo10-mini.png">
+                    </a>
+                </article>
+                <article><!-- cada aricle scontenera a cada imagen -->
+                    <a rel="trabajos" class="fade" href="{{ base_url() }}/assets/img/trabajo11.png" title="Este es el trabajo 12">
+                        <img class="redonda" src="{{ base_url() }}/assets/img/trabajo11-mini.png">
+                    </a>
+                </article>
+            </div>
+        </section>
+    </section>
+    <footer>
+        Sage Network - Cafe Internet - Venta de tarjetas Steam comunicate con <a rel="author" href="http://twitter.com/767Ron" target="_blank">@767Ron</a><!--Enlasa el @767Ron con nuestra cuenta de twitter pero al momento de hacer click en el link nos habrira una nueva pestana en el navegador-->
+    </footer> 
+    </body>
+</html>
+        

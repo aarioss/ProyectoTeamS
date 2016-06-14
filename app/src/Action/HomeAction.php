@@ -24,4 +24,33 @@ final class HomeAction
         $this->view->render($response, 'home.twig');
         return $response;
     }
+
+    public function viewAcerca(Request $request, Response $response, $args){
+        $this->logger->info("Acerca page action dispatched");
+        
+        $this->view->render($response, 'acerca.twig');
+        return $response;
+    }
+
+    public function viewServicios(Request $request, Response $response, $args){
+        $this->logger->info("Servicios page action dispatched");
+        
+        $this->view->render($response, 'servicios.twig');
+        return $response;
+    }
+
+    public function viewProductos(Request $request, Response $response, $args){
+        $this->logger->info("Productos page action dispatched");
+        
+        $this->view->render($response, 'productos.twig');
+        return $response;
+    }
+
+    public function viewContacto(Request $request, Response $response, $args){
+        $this->logger->info("Contacto page action dispatched");
+        
+        $this->view->render($response, 'contacto.twig');
+        return $response;
+    }
+
 }

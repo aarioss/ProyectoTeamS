@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>SAGE Network con Responsive Web Design. Secci&oacute;n Acerca </title>   
+    <meta name="description" content="En esta secci&oacute;n podr&aacute;n conocer un poco m&aacute;s sobre SAGENetwork" />
+    <meta name="viewport" content="width=device-width,initial-scalet=1" />
+    <!-- viweport significa que el ancho de nuestra pagina se va ver conf orme sea el ancho del dispositivo en el que se esta biendo, y la escala inicial sera =1 o 100%-->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ base_url() }}/assets/img/favicon2.ico" /><!--Esta linea de codigo es para poner una icon nuestra pagina que va alado del titulo de la WEB-->
+    <link rel="author" type="text/plain" href="humans.txt" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+     <link href='{{ base_url() }}/css/style.css' rel='stylesheet' type='text/css' />
+    <!--[if lt IE 9]>
+        <scrip src="//html5shiv.googlecode.com/svn/trunk/html5.js"></scrip>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            <img class="fade" alt="SAGENetwork.com | sitio para gamer's" src="{{ base_url() }}/assets/img/Sage-logo.png" />
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/acerca">Acerca</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/productos">Productos</a></li>
+                <li><a href="/contacto">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contenido">
+       <section id="contacto">
+            <h2>Cont&aacute;ctanos</h2>
+            <article id="info-contacto">
+                <p>
+                    Email:
+                    <span class="datos-contactos">ron.men.767@gmail.com</span>
+                    <br />
+                    M&oacute;vil:
+                    <span class="datos-contactos">591+72259594</span>
+                    <br />
+                    Web:
+                    <span class="datos-contactos">SageNetwork.com</span>
+                    <br />
+                    Direcci&oacute;n:
+                    <span class="datos-contactos">Maria E. Ballivian Esq. Vericini / Cochabamba-Bolivia</span>
+                    <br />
+                    Social Media:
+                    <span class="datos-contactos">
+                        <a class="fade" href="https://www.facebook.com/SAGENetworkcbba/" title="Facebook"><img src="{{ base_url() }}/assets/img/facebook-logo.png"></a>
+                        &nbsp;&nbsp;&nbsp;
+                            <a class="fade" href="https://twitter.com/767Ron/" title="Twitter"><img src="{{ base_url() }}/assets/img/twitter-logo.png"></a>
+                        &nbsp;&nbsp;&nbsp;
+                            <a class="fade" href="https://plus.google.com/u/0/+RonMeneses/posts" title="Google +"><img src="{{ base_url() }}/assets/img/google-plus-logo.png"></a>
+                        &nbsp;&nbsp;&nbsp;
+                            <a class="fade" href="https://www.youtube.com/channel/UCYMFW1wgENH6nu3Ts6_-TaQ" title="Youtube"><img src="{{ base_url() }}/assets/img/youtube-logo.png"></a>
+                        &nbsp;&nbsp;&nbsp;
+                    </span>
+                </p>
+            </article>
+            <article id="contactanos">
+                <form>
+                    <fieldset>
+                        <legend>Env&iacute;anos tus comentarios</legend>
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" class="fade" name="nombre_txt" required />
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" class="fade" name="email_txt" required />
+                        </div>
+                        <div>
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" id="asunto" class="fade" name="asunto_txt" required />
+                        </div>
+                        <div>
+                            <label for="comentarios">Comentarios:</label>
+                            <textarea id="comentarios" class="fade" name="comentarios_txa" cols="3" rows="5" required ></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" id="enviar" class="fade" name="enviar_btn" value="Enviar" />
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+        <section id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3808.1693022726063!2d-66.18864126134835!3d-17.3555844953198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1464064575552" width="800" height="535" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+    </section>
+    <footer>
+        Aprendiendo HTML5,CSS3, jQuery y Responsive Web Desing con <a rel="author" href="http://twitter.com/767Ron" target="_blank">@767Ron</a><!--Enlasa el @767Ron con nuestra cuenta de twitter pero al momento de hacer click en el link nos habrira una nueva pestana en el navegador-->
+    </footer>
+</body>
+</html>

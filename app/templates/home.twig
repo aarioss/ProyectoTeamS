@@ -1,13 +1,115 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
     <head>
         <meta charset="utf-8"/>
-        <title>Slim 3</title>
-        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-        <link href='{{ base_url() }}/css/style.css' rel='stylesheet' type='text/css'>
+        <title>SAGE Network con Responsive Web Design </title>  
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css' />        
+        <!-- Bootstrap css-->
+        <!-- <link href='{{ base_url() }}/assets/js/bootstrap/bootstrap.css' rel='stylesheet'  /> -->
+        <!-- Bootstrap js -->
+       <!--  <script src="{{ base_url() }}/assets/js/bootstrap/bootstrap.min.js"></script>  -->
+        
+
+        <!-- codigo copiado -->
+        <meta name="description" content="Bienvenido a mi portafoleo Web hecho en HTML5, CSS3 y jQuery Responsive Web Design" />
+        <meta name="viewport" content="width=device-width,initial-scalet=1" />
+        <!-- viweport significa que el ancho de nuestra pagina se va ver conf orme sea el ancho del dispositivo en el que se esta biendo, y la escala inicial sera =1 o 100%-->
+        <link rel="shortcut icon" type="image/x-icon" href="{{ base_url() }}/assets/img/favicon2.ico" /><!--Esta linea de codigo es para poner una icon nuestra pagina que va alado del titulo de la WEB-->
+        
+        
+        <link rel='stylesheet' type='text/css' href='{{ base_url() }}/css/style.css'  />
+        <!-- Jquery js -->
+        <script src="{{ base_url() }}/assets/js/jquery/jquery-1.4.3.min.js"></script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script><!--Con este Scrip llamamos a la libreria de jquery en su ultima version desde google es decir en linea.-->
+
+        <!--[if lt IE 9]>
+         <scrip src="//http://html5shiv.googlecode.com/svn/trunk/html5.js"></scrip>
+        <![endif]-->
+
+        <script>
+        !window.jquery && document.write("<script src='{{ base_url() }}/assets/js/jquery/jquery-1.4.3.min.js'><\/script>"); 
+        </script><!--Si estamos sin internet y no encuentra el jquery on-line lo buscara en nuestra carpeta js local -->
+        <script src="{{ base_url() }}/assets/js/jquery/jquery.flexslider.js"></script><!--En esta parte hacemos referencia a flexslider
+        que esta dentro de nuestro proyecto en la carpeta js-->
+        <link rel="stylesheet" href="{{ base_url() }}/css/flexslider.css" /> <!-- El link del flexsilder.css -->
+        <script src="{{ base_url() }}/assets/js/jquery/main.js"></script> <!-- Efecuta la fuincion que inicia el flexsiler --> 
+
     </head>
     <body>
-        <h1>Slim</h1>
-        <div>a microframework for PHP</div>
+       <header>
+        <h1>
+            <a href="/">
+            <img class="fade" alt="SAGENetwork.com | sitio para gamer's" src="{{ base_url() }}/assets/img/Sage-logo.png" />
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/acerca">Acerca</a></li>
+                <li><a href="/servicios">Servicios</a></li>
+                <li><a href="/productos">Productos</a></li>
+                <li><a href="/contacto">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contenido">
+        <section id="principal">
+            <article id="galeria-inicio"> 
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <a href="SAGENetwork.com"><img src="{{ base_url() }}/assets/img/slide-0.png" /></a>
+                            <p class="flex-caption">SageNetwork | lugar para gamer's.</p>
+                        </li>
+                        <li>
+                            <img src="{{ base_url() }}/assets/img/slide-1.png" />
+                            <p class="flex-caption">Crea tu cuenta de Dota 2</p>
+                        </li>
+                        <li>
+                            <img src="{{ base_url() }}/assets/img/slide-2.png" />
+                        </li>
+                        <li>
+                            <a href="http://SAGENetwork.com"><img src="{{ base_url() }}/assets/img/slide-3.png" /></a>
+                            <p class="flex-caption">Ven y comprate nuestra Red Local</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <aside><!--Contenido que no es relevante para nuestra pagina. Como widget sociales o publicidad-->
+        <!--Twitter-->  
+            <!-- WIDGED -->
+                              <a class="twitter-timeline"  href="https://twitter.com/767Ron" data-widget-id="733759641365164033">Tweets por el @767Ron.</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+            <!-- Boton seguir de twitter -->
+            <a href="https://twitter.com/767Ron" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large"></a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>        
+      
+        <!--Facebook-->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="fb-like" data-href="https://www.facebook.com/SAGENetworkcbba/" data-width="450" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+    
+        <!--Publicidad-->
+        <figure>
+            <a class="fade" href="http://us.battle.net/heroes/es/" target="_blank">
+                <img src="{{ base_url() }}/assets/img/heroes.png" alt="Heroes of the Strom" />
+                <figcaption>Heroes of the Strom</figcaption>
+            </a>
+        </figure>
+        </aside>
+    </section>
+    <footer>
+        Sage Network - Cafe Internet - Venta de tarjetas Steam comunicate con <a rel="author" href="http://twitter.com/767Ron" target="_blank">@767Ron</a><!--Enlasa el @767Ron con nuestra cuenta de twitter pero al momento de hacer click en el link nos habrira una nueva pestana en el navegador-->
+    </footer> 
     </body>
 </html>
         
